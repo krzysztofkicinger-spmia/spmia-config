@@ -1,0 +1,16 @@
+tracer:
+  property: "I AM THE DEFAULT"
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/eagle_eye_local"
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        temp.use_jdbc_metadata_defaults: false
